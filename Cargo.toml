@@ -1,0 +1,25 @@
+[package]
+name = "cortex-m-quickstart"
+version = "0.1.0"
+
+[profile.release]
+codegen-units = 1 # better optimizations
+debug = true
+lto = true # better optimizations
+
+[dependencies]
+cortex-m = "0.5.6"
+cortex-m-rt = "0.5.3"
+cortex-m-semihosting = "0.3.1"
+panic-semihosting = "0.5.0"
+
+# Uncomment for the panic example.
+# panic-itm = "0.1.1"
+
+# Uncomment for the allocator example.
+# alloc-cortex-m = "0.3.4"
+
+# Uncomment for the device example.
+# [dependencies.stm32f103xx]
+# features = ["rt"]
+# version = "0.10.0"
