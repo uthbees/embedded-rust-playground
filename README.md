@@ -1,3 +1,6 @@
+Embedded Rust stuff for the NUCLEO-L476RG board.
+
+
 Requirements:
 
 - Install gdb-multiarch
