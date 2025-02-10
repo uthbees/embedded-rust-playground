@@ -8,7 +8,7 @@ Requirements:
 
 See https://docs.rust-embedded.org/cortex-m-quickstart/cortex_m_quickstart/ for details/troubleshooting.
 
-To run, execute these commands in separate terminals:
+The best way to run this is to use the debug option with CLion's OpenOCD configuration. However, if you need to run it manually, you can do so by executing these commands in separate terminals:
 
 ```bash
 openocd -f ./stlink.cfg
@@ -18,4 +18,4 @@ openocd -f ./stlink.cfg
 cargo run
 ```
 
-The program can be reset by running `monitor reset` in the gdb console (the second terminal).
+When running manually, the program can be reset by running `monitor reset` in the gdb console (the second terminal).
