@@ -10,16 +10,19 @@ extern crate cortex_m_rt as rt;
 extern crate cortex_m_semihosting as sh;
 extern crate panic_semihosting;
 
-use core::fmt::Write;
+// use core::fmt::Write;
 
 use rt::ExceptionFrame;
-use sh::hio;
+// use sh::hio;
 
 entry!(main);
 
 fn main() -> ! {
-    let mut stdout = hio::hstdout().unwrap();
-    writeln!(stdout, "Hello world!").unwrap();
+    // let mut stdout = hio::hstdout().unwrap();
+    // writeln!(stdout, "Hello world!").unwrap();
+    let x = 1;
+    let y = 2;
+    let z = 3;
 
     loop {}
 }

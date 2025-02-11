@@ -1,14 +1,21 @@
 Embedded Rust stuff for the NUCLEO-L476RG board.
 
+### Setting up
 
-Requirements:
+Everything is standard git/Rust, except that the git hooks are stored in the `.githooks` directory. Run
+`git config --local core.hooksPath .githooks` when setting up a new environment.
+
+### Requirements
 
 - Install gdb-multiarch
 - Install OpenOCD
 
 See https://docs.rust-embedded.org/cortex-m-quickstart/cortex_m_quickstart/ for details/troubleshooting.
 
-The best way to run this is to use the debug option with CLion's OpenOCD configuration. However, if you need to run it manually, you can do so by executing these commands in separate terminals:
+### Running
+
+The best way to run this is to use the debug option with CLion's OpenOCD configuration. However, if you need to run it
+manually, you can do so by executing these commands in separate terminals:
 
 ```bash
 openocd -f ./stlink.cfg

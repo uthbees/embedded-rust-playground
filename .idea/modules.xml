@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/cortex-m-quickstart.iml" filepath="$PROJECT_DIR$/.idea/cortex-m-quickstart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/embedded-rust-sandbox.iml" filepath="$PROJECT_DIR$/.idea/embedded-rust-sandbox.iml" />
     </modules>
   </component>
 </project>

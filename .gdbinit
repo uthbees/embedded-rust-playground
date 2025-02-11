@@ -1,5 +1,3 @@
-target remote :3333
-
 # print demangled symbols by default
 set print asm-demangle on
 
@@ -17,5 +15,5 @@ monitor arm semihosting enable
 # # enable ITM port 0
 # monitor itm port 0 on
 
-load
-step
+#load
+#step

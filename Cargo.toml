@@ -1,11 +1,20 @@
 [package]
-name = "cortex-m-quickstart"
+name = "embedded-rust-sandbox"
 version = "0.1.0"
+# TODO: Upgrade (maybe even to 2024)
+#edition = "2021"
 
 [profile.release]
+overflow-checks = true
 codegen-units = 1 # better optimizations
 debug = true
 lto = true # better optimizations
+
+[lints.clippy]
+all = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+missing_panics_doc = "allow"
+missing_errors_doc = "allow"
 
 [dependencies]
 cortex-m = "0.5.6"
