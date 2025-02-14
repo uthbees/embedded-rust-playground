@@ -1,7 +1,9 @@
-# print demangled symbols by default
-set print asm-demangle on
+# This file does nothing right now.
 
-monitor arm semihosting enable
+# print demangled symbols by default
+# set print asm-demangle on
+
+# monitor arm semihosting enable
 
 # # send captured ITM to the file itm.fifo
 # # (the microcontroller SWO pin must be connected to the programmer SWO pin)

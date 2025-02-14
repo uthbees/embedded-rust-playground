@@ -1,25 +1,15 @@
-//! Prints "Hello, world!" on the OpenOCD console using semihosting
-//!
-//! ---
-
 #![no_main]
 #![no_std]
 
-#[macro_use]
 extern crate cortex_m_rt as rt;
-extern crate cortex_m_semihosting as sh;
-extern crate panic_semihosting;
 
-// use core::fmt::Write;
-
+use rt::entry;
+use rt::exception;
 use rt::ExceptionFrame;
-// use sh::hio;
 
 entry!(main);
 
 fn main() -> ! {
-    // let mut stdout = hio::hstdout().unwrap();
-    // writeln!(stdout, "Hello world!").unwrap();
     let x = 1;
     let y = 2;
     let z = 3;
