@@ -1,5 +1,3 @@
-# This file does nothing right now.
-
 # print demangled symbols by default
 # set print asm-demangle on
 
