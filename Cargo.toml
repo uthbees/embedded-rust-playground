@@ -1,11 +1,10 @@
 [package]
 name = "embedded-rust-sandbox"
 version = "0.1.0"
-# TODO: Upgrade (maybe even to 2024)
-#edition = "2021"
+edition = "2021"
 
 [[bin]]
-name = "ers-bin"
+name = "embedded-rust-sandbox"
 test = false
 doctest = false
 bench = false

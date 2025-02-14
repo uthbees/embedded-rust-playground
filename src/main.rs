@@ -10,9 +10,9 @@ use rt::ExceptionFrame;
 entry!(main);
 
 fn main() -> ! {
-    let x = 1;
-    let y = 2;
-    let z = 3;
+    // let x = 1;
+    // let y = 2;
+    // let z = 3;
 
     loop {}
 }
@@ -27,4 +27,9 @@ exception!(*, default_handler);
 
 fn default_handler(irqn: i16) {
     panic!("Unhandled exception (IRQn = {})", irqn);
+}
+
+#[panic_handler]
+fn panic(_info: &core::panic::PanicInfo) -> ! {
+    loop {}
 }
