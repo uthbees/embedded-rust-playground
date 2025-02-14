@@ -1,19 +1,18 @@
+// Set up the entrypoint and some exception handlers. Business logic should go in other files.
+
 #![no_main]
 #![no_std]
 
-extern crate cortex_m_rt as rt;
-
-use rt::entry;
-use rt::exception;
-use rt::ExceptionFrame;
+use cortex_m_rt::entry;
+use cortex_m_rt::exception;
+use cortex_m_rt::ExceptionFrame;
 
 entry!(main);
 
 fn main() -> ! {
-    // let x = 1;
-    // let y = 2;
-    // let z = 3;
+    embedded_rust_sandbox::run();
 
+    #[allow(clippy::empty_loop)]
     loop {}
 }
 

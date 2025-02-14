@@ -1,5 +1,3 @@
 #![no_std]
 
-pub fn run() {
-    ()
-}
+pub fn run() {}
