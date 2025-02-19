@@ -1,6 +1,6 @@
 #![no_std]
 
-use driver::{enable_gpio_ports, GpioPort, GpioPortVariant, PinMode};
+use driver::{GpioPort, GpioPortVariant, PinMode};
 
 mod driver;
 
@@ -8,8 +8,6 @@ const LED_PIN: u8 = 5; // PA5
 const BUTTON_PIN: u8 = 13; // PC13
 
 pub fn run() {
-    enable_gpio_ports();
-
     let mut gpioa = GpioPort::new(GpioPortVariant::A);
     let mut gpioc = GpioPort::new(GpioPortVariant::C);
 
